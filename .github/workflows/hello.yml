@@ -6,10 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: printing welome to github worklow
-        run: echo "Hello welcome to github Actions"
-      - name: multiline
+      - name: Deploy
         run: |
-          echo "line 1"
-          echo "line 2"
-          echo "line 3"
+          echo "Building to project..."
+          echo "Project: ${{ secrets.GCP_PROJECT_ID }}"
