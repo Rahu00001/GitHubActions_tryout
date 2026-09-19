@@ -37,7 +37,9 @@ jobs:
           cache-dependency-path: 'sample-app/package-lock.json'
 
       - name: Install dependencies
+        working-directory: ./sample-app
         run: npm ci
 
       - name: Run tests
+        working-directory: ./sample-app
         run: npm test
