@@ -32,7 +32,7 @@ export function greet() {
   const name = process.argv[2] || 'world';
   execSync(`echo Hello, ${name}`, { stdio: 'inherit' });
 }
-
+// some changes to be added
 // The fix for both is identical, and it is NOT escaping the input: stop
 // building a shell string at all. Pass the command and its arguments
 // separately so no shell ever parses them —
